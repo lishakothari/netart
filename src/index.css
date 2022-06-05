@@ -7,3 +7,45 @@ nav {
   height: 100px;
   width: 300px;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item-right{
+  width: 70%;
+  text-align: center;
+  text-align: left;
+}
+
+.flex-item-left {
+  width: 30%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.products-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: red;
+  color: white;
+}
