@@ -8,7 +8,7 @@ const Hero = () => {
     return (  
         <div className="flex-container">
             <div className="flex-item-left">
-                <img src={medal} alt='medal' height={700} width={400} />
+                <img src={medal} alt='medal' className='hero' />
             </div>
             <div className="flex-item-right">
                 <h4>{data.title}</h4>
@@ -16,7 +16,7 @@ const Hero = () => {
                     <li> {data.data1}</li>
                     <li>{data.data1}</li>
                 </ul>
-                <img src={prize} alt='prize' height={500} width={900} />
+                <img src={prize} alt='prize' className='hero' />
                 <h4>{data.info}</h4>
             </div>
         </div>

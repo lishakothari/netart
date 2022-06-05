@@ -19,6 +19,27 @@ nav {
   text-align: left;
 }
 
+.hero {
+    max-width: 100%;
+    width: 100%;
+    height: auto !important;
+}
+
+.aboutimg {
+  max-width: 80%;
+  width: 100%;
+  height: auto !important;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    max-width: 50;
+    width: 50%;
+    height: auto !important;
+    align-self: center;
+  }
+}
+
 .flex-item-left {
   width: 30%;
 }
@@ -27,6 +48,17 @@ nav {
   .flex-container {
     flex-direction: column;
   }
+
+  .flex-item-left {
+    width: 100%;
+  }
+
+  .flex-item-right{
+    width: 100%;
+    text-align: center;
+    text-align: left;
+  }
+
 }
 
 .about-container {
@@ -48,4 +80,21 @@ nav {
   justify-content: space-around;
   background-color: red;
   color: white;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutimg {
+    max-width: 50;
+    width: 50%;
+    height: auto !important;
+    align-self: center;
+  }
 }
